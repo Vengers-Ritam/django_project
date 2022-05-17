@@ -27,4 +27,5 @@ jobs:
         pip install -r requirements.txt
     - name: Run Tests
       run: |
+        echo "$HOME/.local/bin" >> $GITHUB_PATH
         python manage.py test
